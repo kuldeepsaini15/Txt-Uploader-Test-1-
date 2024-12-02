@@ -209,8 +209,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'[ 🎥 ] Lᴇᴄ ɪᴅ. »  {str(count).zfill(3)}. \n🔰 Tɪᴛᴛʟᴇ » {𝗻𝗮𝗺𝗲𝟭}『 @saini_sahab19 』mkv\n\n**</pre>📲 𝐁ᴀᴛᴄʜ 𝐍ᴀᴍᴇ** » **\n\n**{raw_text0}</pre>** \n\n📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » {MR}'
-                cc1 = f'[ 📁 ] Pᴅғ ɪᴅ. »  {str(count).zfill(3)}. \n🔰 Tɪᴛᴛʟᴇ » {𝗻𝗮𝗺𝗲𝟭}『 @saini_sahab19 』pdf \n\n**</pre>📲 𝐁ᴀᴛᴄʜ 𝐍ᴀᴍᴇ** » **\n\n**{raw_text0}</pre>** \n\n📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » {MR}**'
+                cc = f'[ 🎥 ] Lᴇᴄ ɪᴅ. »  {str(count).zfill(3)}. \n🔰 Tɪᴛᴛʟᴇ » {𝗻𝗮𝗺𝗲𝟭}『 @saini_sahab19 』.mkv\n\n**</pre>📲 𝐁ᴀᴛᴄʜ 𝐍ᴀᴍᴇ** » **\n\n**{raw_text0}</pre>** \n\n📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » {MR}'
+                cc1 = f'[ 📁 ] Pᴅғ ɪᴅ. »  {str(count).zfill(3)}. \n🔰 Tɪᴛᴛʟᴇ » {𝗻𝗮𝗺𝗲𝟭}『 @saini_sahab19 』.pdf \n\n**</pre>📲 𝐁ᴀᴛᴄʜ 𝐍ᴀᴍᴇ** » **\n\n**{raw_text0}</pre>** \n\n📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » {MR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
